@@ -92,14 +92,30 @@ C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha d
 Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let totalShoppingCart = 60
+let spedizione = 10
+
+if (totalShoppingCart > 50) {
+  console.log(totalShoppingCart + " è il totale");
+} else {
+  console.log(totalShoppingCart + spedizione + " è il totale");
+}
 
 /* ESERCIZIO EXTRA 3
   Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando, usando l'algoritmo del codice precedente, se le spedizioni siano gratuite oppure no e e calcolando il totale.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let blackFriday = true
+let totSenzaSconto;
+
+if (blackFriday) {
+  totSenzaSconto = totalShoppingCart / 1.20 
+} else {
+  totSenzaSconto = totalShoppingCart
+}
+
+console.log(totSenzaSconto);
 
 /*  ESERCIZIO EXTRA 4
   Usa un operatore ternaio per assegnare ad una variabile chiamata "gender" i valori "male" o "female".
